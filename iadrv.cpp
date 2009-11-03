@@ -3,22 +3,22 @@
 #include <fstream>
 #include <stdlib.h>
 #include "iadrv.h"
- 
+
 using namespace std;
- 
+
 ofstream csis;
- 
+
 int main() {
     csis.open("csis.dat");
-    test1();
-    test2();
-    test3();
+//    test1();
+//    test2();
+//    test3();
 //    test4();
 //    test5();
 //    test6();
 //    test7();
 //    test8();
-//    test9();
+    test9();
 //    test10();
 //    test11();
 //    test12();
@@ -32,22 +32,22 @@ int main() {
 //    test20();
     csis.close();
 }
- 
-void test1() {
-//    system("cls");
-    cout << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
-    csis << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
-    IntArray a(10);
-    for(int i = a.low(); i <= a.high(); i++)
-        a[i] = i * 10;
-    a.setName("a");
-    cout << a << endl;
-    csis << a << endl;
+
+//void test1() {
+//    system("clear");
+//    cout << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
+//    csis << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
+//    IntArray a(10);
+//    for(int i = a.low(); i <= a.high(); i++)
+//        a[i] = i * 10;
+//    a.setName("a");
+//    cout << a << endl;
+//    csis << a << endl;
 //    wait();
-}
- 
+//}
+
 void test2() {
-    system("cls");
+    system("clear");
     cout << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
     csis << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
     IntArray b(-3, 6);
@@ -56,11 +56,11 @@ void test2() {
     b.setName("b");
     cout << b << endl;
     csis << b << endl;
-//    wait();
+    wait();
 }
-// 
+
 void test3() {
-    system("cls");
+    system("clear");
     cout << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
     csis << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
     IntArray c(6, 8);
@@ -69,86 +69,88 @@ void test3() {
     c.setName("c");
     cout << c << endl;
     csis << c << endl;
-//    wait();
+    wait();
 }
-// 
-//void test4() {
-//    system("cls");
-//    cout << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
-//    csis << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
-//    IntArray d(5, 5);
-//    for(int i = d.low(); i <= d.high(); i++)
-//        d[i] = i * 10;
-//    d.setName("d");
-//    cout << d << endl;
-//    csis << d << endl;
-//    wait();
-//}
-// 
-//void test5() {
-//    system("cls");
-//    cout << "5. Array declared with no integers: IntArray z;" << endl << endl;
-//    csis << "5. Array declared with no integers: IntArray z;" << endl << endl;
-//    IntArray z;
-//    for(int i = z.low(); i <= z.high(); i++)
-//        z[i] = i * 10;
-//    z.setName("z");
-//    cout << z << endl;
-//    csis << z << endl;
-//    wait();
-//}
-// 
-//void test6() {
-//    system("cls");
-//    cout << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
-//    cout << "                                                        Intarray e(c);"    << endl << endl;
-//    csis << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
-//    csis << "                                                        Intarray e(c);"    << endl << endl;
-//    IntArray c(6, 8);
-//    for(int i = c.low(); i <= c.high(); i++)
-//        c[i] = i * 10;
-//    c.setName("c");
-//    cout << c << endl;
-//    csis << c << endl;
-//    IntArray e(c);
-//    e.setName("e");
-//    cout << e << endl;   
-//    csis << e << endl;
-//    wait();
-//}
-// 
-//void test7() {
-//    system("cls");
-//    cout << "7. Array assigned to another array with different indices: IntArray f(1, 4);"  << endl;
-//    cout << "                                                           IntArray g(5, 8);"  << endl;
-//    cout << "                                                           f = g;"             << endl << endl;
-//    csis << "7. Array assigned to another array with different indices: IntArray f(1, 4);"  << endl;
-//    csis << "                                                           IntArray g(5, 8);"  << endl;
-//    csis << "                                                           f = g;"             << endl << endl;
-//    IntArray f(1, 4);
-//    for(int i = f.low(); i <= f.high(); i++)
-//        f[i] = i * 10;
-//    f.setName("f");
-//    cout << f << endl;
-//    csis << f << endl;
-//    IntArray g(5, 8);
-//    for(int i = g.low(); i <= g.high(); i++)
-//        g[i] = i * 10;
-//    g.setName("g");
-//    cout << g << endl;
-//    csis << g << endl;
-//    wait();
-//    system("cls");
-//    f = g;
-//    cout << f << endl;
-//    cout << g << endl;
-//    csis << f << endl;
-//    csis << g << endl;
-//    wait();
-//}
-// 
+
+void test4() {
+    system("clear");
+    cout << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
+    csis << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
+    IntArray d(5, 5);
+    for(int i = d.low(); i <= d.high(); i++)
+        d[i] = i * 10;
+    d.setName("d");
+    cout << d << endl;
+    csis << d << endl;
+    wait();
+}
+
+void test5() {
+    system("clear");
+    cout << "5. Array declared with no integers: IntArray z;" << endl << endl;
+    csis << "5. Array declared with no integers: IntArray z;" << endl << endl;
+    cout << "yo mama";
+    IntArray z(10);
+    cout << "isaho";
+    for(int i = z.low(); i <= z.high(); i++)
+        z[i] = i * 10;
+    z.setName("z");
+    cout << z << endl;
+    csis << z << endl;
+    wait();
+}
+ 
+void test6() {
+    system("clear");
+    cout << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
+    cout << "                                                        Intarray e(c);"    << endl << endl;
+    csis << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
+    csis << "                                                        Intarray e(c);"    << endl << endl;
+    IntArray c(6, 8);
+    for(int i = c.low(); i <= c.high(); i++)
+        c[i] = i * 10;
+    c.setName("c");
+    cout << c << endl;
+    csis << c << endl;
+    IntArray e(c);
+    e.setName("e");
+    cout << e << endl;   
+    csis << e << endl;
+    wait();
+}
+ 
+void test7() {
+    system("clear");
+    cout << "7. Array assigned to another array with different indices: IntArray f(1, 4);"  << endl;
+    cout << "                                                           IntArray g(5, 8);"  << endl;
+    cout << "                                                           f = g;"             << endl << endl;
+    csis << "7. Array assigned to another array with different indices: IntArray f(1, 4);"  << endl;
+    csis << "                                                           IntArray g(5, 8);"  << endl;
+    csis << "                                                           f = g;"             << endl << endl;
+    IntArray f(1, 4);
+    for(int i = f.low(); i <= f.high(); i++)
+        f[i] = i * 10;
+    f.setName("f");
+    cout << f << endl;
+    csis << f << endl;
+    IntArray g(5, 8);
+    for(int i = g.low(); i <= g.high(); i++)
+        g[i] = i * 10;
+    g.setName("g");
+    cout << g << endl;
+    csis << g << endl;
+    wait();
+    system("clear");
+    f = g;
+    cout << f << endl;
+    cout << g << endl;
+    csis << f << endl;
+    csis << g << endl;
+    wait();
+}
+ 
 //void test8() {
-//    system("cls");
+//    system("clear");
 //    cout << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
 //    cout << "                                                     IntArray k(6, 9);"  << endl;
 //    cout << "                                                     IntArray l(1, 4);"  << endl;
@@ -176,7 +178,7 @@ void test3() {
 //    cout << l << endl;
 //    csis << l << endl;
 //    wait();
-//    system("cls");
+//    system("clear");
 //    j = k = l;
 //    cout << j << endl;
 //    cout << k << endl;
@@ -186,39 +188,39 @@ void test3() {
 //    csis << l << endl;
 //    wait();
 //}
-// 
-//void test9() {
-//    system("cls");
-//    cout << "9. Overloaded equality operator (identical elements): IntArray m(3, 7);"  << endl;
-//    cout << "                                                      IntArray n(1, 5);"  << endl;
-//    cout << "                                                      m == n"             << endl << endl;
-//    csis << "9. Overloaded equality operator (identical elements): IntArray m(3, 7);"  << endl;
-//    csis << "                                                      IntArray n(1, 5);"  << endl;
-//    csis << "                                                      m == n"             << endl << endl;
-//    IntArray m(3, 7);
-//    for(int i = m.low(); i <= m.high(); i++)
-//        m[i] = i * 10;
-//    m.setName("m");
-//    cout << m << endl;
-//    csis << m << endl;
-//    IntArray n(1, 5);
-//    for(int i = n.low(); i <= n.high(); i++)
-//        n[i] = i * 10;
-//    n.setName("n");
-//    cout << n << endl;
-//    csis << n << endl;
-//    wait();
-//    system("cls");
-//    m = n;
-//    cout << m << endl;
-//    cout << n << endl;
-//    cout << "Returns " << (m == n ? "True." : "False.") << endl << endl;
-//    csis << m << endl;
-//    csis << n << endl;
-//    csis << "Returns " << (m == n ? "True." : "False.") << endl << endl;
-//    wait();
-//}
-// 
+ 
+void test9() {
+    system("clear");
+    cout << "9. Overloaded equality operator (identical elements): IntArray m(3, 7);"  << endl;
+    cout << "                                                      IntArray n(1, 5);"  << endl;
+    cout << "                                                      m == n"             << endl << endl;
+    csis << "9. Overloaded equality operator (identical elements): IntArray m(3, 7);"  << endl;
+    csis << "                                                      IntArray n(1, 5);"  << endl;
+    csis << "                                                      m == n"             << endl << endl;
+    IntArray m(3, 7);
+    for(int i = m.low(); i <= m.high(); i++)
+        m[i] = i * 10;
+    m.setName("m");
+    cout << m << endl;
+    csis << m << endl;
+    IntArray n(1, 5);
+    for(int i = n.low(); i <= n.high(); i++)
+        n[i] = i * 10;
+    n.setName("n");
+    cout << n << endl;
+    csis << n << endl;
+    wait();
+    system("cls");
+    m = n;
+    cout << m << endl;
+    cout << n << endl;
+    cout << "Returns " << (m == n ? "True." : "False.") << endl << endl;
+    csis << m << endl;
+    csis << n << endl;
+    csis << "Returns " << (m == n ? "True." : "False.") << endl << endl;
+    wait();
+}
+ 
 //void test10() {
 //    system("cls");
 //    cout << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
@@ -485,7 +487,7 @@ void test3() {
 //    csis << o << endl;
 //    wait();
 //}
- 
+
 void wait() {
     char buf;
  
