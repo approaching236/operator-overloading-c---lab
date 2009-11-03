@@ -41,7 +41,7 @@ void test1() {
     cout << a.low() << " " << a.high() << "\n";
     for(int i = a.low(); i <= a.high(); i++)
         a[i] = i * 10;
-//    a.setName("a");
+    a.setName("a");
 //    cout << a << endl;
 //    csis << a << endl;
 //    wait();

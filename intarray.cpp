@@ -9,12 +9,14 @@ IntArray::IntArray (int start, int finish) {
   a = start;
   b = finish;
   num = new int[b-a];
+  name = setName("");
 }
 
 IntArray::IntArray (int finish) {
   a = 0;
   b = finish;
   num = new int[b];
+  name = setName("");
 }
 
 int IntArray::low() {
@@ -27,5 +29,9 @@ int IntArray::high() {
 
 int& IntArray::operator[](int i) {
   return num[i+a];
+}
+
+void IntArray::setName(char *n) {
+  name = n;
 }
 
