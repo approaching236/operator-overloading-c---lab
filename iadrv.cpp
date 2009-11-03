@@ -12,7 +12,7 @@ int main() {
     csis.open("csis.dat");
     test1();
     test2();
-//    test3();
+    test3();
 //    test4();
 //    test5();
 //    test6();
@@ -59,18 +59,18 @@ void test2() {
 //    wait();
 }
 // 
-//void test3() {
-//    system("cls");
-//    cout << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
-//    csis << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
-//    IntArray c(6, 8);
-//    for(int i = c.low(); i <= c.high(); i++)
-//        c[i] = i * 10;
-//    c.setName("c");
-//    cout << c << endl;
-//    csis << c << endl;
+void test3() {
+    system("cls");
+    cout << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
+    csis << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
+    IntArray c(6, 8);
+    for(int i = c.low(); i <= c.high(); i++)
+        c[i] = i * 10;
+    c.setName("c");
+    cout << c << endl;
+    csis << c << endl;
 //    wait();
-//}
+}
 // 
 //void test4() {
 //    system("cls");
