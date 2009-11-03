@@ -1,4 +1,5 @@
-#include "intarray.h"	
+#include "intarray.h"
+#include <iostream>
 #include <fstream>
 
 using namespace std;
@@ -9,14 +10,14 @@ IntArray::IntArray (int start, int finish) {
   a = start;
   b = finish;
   num = new int[b-a];
-  name = setName("");
+  setName("");
 }
 
 IntArray::IntArray (int finish) {
   a = 0;
   b = finish;
   num = new int[b];
-  name = setName("");
+  setName("");
 }
 
 int IntArray::low() {
@@ -33,5 +34,12 @@ int& IntArray::operator[](int i) {
 
 void IntArray::setName(char *n) {
   name = n;
+}
+
+ostream& operator<< (ostream& os, IntArray& ia) {
+	for (int i = ia.low(); i <= ia.high(); i++) {
+		os << ia[i] << " ";
+	}
+	return os;
 }
 

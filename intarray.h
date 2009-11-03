@@ -1,5 +1,9 @@
 #ifndef _INTARRAY_H
 #define _INTARRAY_H
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
 
 class IntArray {
   private:
@@ -13,6 +17,7 @@ class IntArray {
     int low();
     int high();
     int& operator[](int i);
+    friend ostream& operator<<(ostream& os, IntArray& ia);
     void setName(char *name);
 };
 
