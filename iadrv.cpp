@@ -11,7 +11,7 @@ ofstream csis;
 int main() {
     csis.open("csis.dat");
     test1();
-//    test2();
+    test2();
 //    test3();
 //    test4();
 //    test5();
@@ -43,21 +43,21 @@ void test1() {
     a.setName("a");
     cout << a << endl;
     csis << a << endl;
-    wait();
+//    wait();
 }
  
-//void test2() {
-//    system("cls");
-//    cout << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
-//    csis << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
-//    IntArray b(-3, 6);
-//    for(int i = b.low(); i <= b.high(); i++)
-//        b[i] = i * 10;
-//    b.setName("b");
-//    cout << b << endl;
-//    csis << b << endl;
+void test2() {
+    system("cls");
+    cout << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
+    csis << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
+    IntArray b(-3, 6);
+    for(int i = b.low(); i <= b.high(); i++)
+        b[i] = i * 10;
+    b.setName("b");
+    cout << b << endl;
+    csis << b << endl;
 //    wait();
-//}
+}
 // 
 //void test3() {
 //    system("cls");

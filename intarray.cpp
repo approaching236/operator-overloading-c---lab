@@ -29,7 +29,7 @@ int IntArray::high() {
 }
 
 int& IntArray::operator[](int i) {
-  return num[i+a];
+  return num[i-a];
 }
 
 void IntArray::setName(char *n) {
