@@ -18,12 +18,12 @@ int main() {
 //    test6();
 //    test7();
 //    test8();
-    test9();
+//    test9();
 //    test10();
 //    test11();
 //    test12();
 //    test13();
-//    test14();
+    test14();
 //    test15();
 //    test16();
 //    test17();
@@ -149,45 +149,45 @@ void test7() {
     wait();
 }
  
-//void test8() {
-//    system("clear");
-//    cout << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
-//    cout << "                                                     IntArray k(6, 9);"  << endl;
-//    cout << "                                                     IntArray l(1, 4);"  << endl;
-//    cout << "                                                     j = k = l;"         << endl << endl;
-//    csis << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
-//    csis << "                                                     IntArray k(6, 9);"  << endl;
-//    csis << "                                                     IntArray l(1, 4);"  << endl;
-//    csis << "                                                     j = k = l;"         << endl << endl;
-//    IntArray j(3, 6);
-//    for(int i = j.low(); i <= j.high(); i++)
-//        j[i] = i * 10;
-//    j.setName("j");
-//    cout << j << endl;
-//    csis << j << endl;
-//    IntArray k(6, 9);
-//    for(int i = k.low(); i <= k.high(); i++)
-//        k[i] = i * 10;
-//    k.setName("k");
-//    cout << k << endl;
-//    csis << k << endl;
-//    IntArray l(1, 4);
-//    for(int i = l.low(); i <= l.high(); i++)
-//        l[i] = i * 10;
-//    l.setName("l");
-//    cout << l << endl;
-//    csis << l << endl;
-//    wait();
-//    system("clear");
-//    j = k = l;
-//    cout << j << endl;
-//    cout << k << endl;
-//    cout << l << endl;
-//    csis << j << endl;
-//    csis << k << endl;
-//    csis << l << endl;
-//    wait();
-//}
+void test8() {
+    system("clear");
+    cout << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
+    cout << "                                                     IntArray k(6, 9);"  << endl;
+    cout << "                                                     IntArray l(1, 4);"  << endl;
+    cout << "                                                     j = k = l;"         << endl << endl;
+    csis << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
+    csis << "                                                     IntArray k(6, 9);"  << endl;
+    csis << "                                                     IntArray l(1, 4);"  << endl;
+    csis << "                                                     j = k = l;"         << endl << endl;
+    IntArray j(3, 6);
+    for(int i = j.low(); i <= j.high(); i++)
+        j[i] = i * 10;
+    j.setName("j");
+    cout << j << endl;
+    csis << j << endl;
+    IntArray k(6, 9);
+    for(int i = k.low(); i <= k.high(); i++)
+        k[i] = i * 10;
+    k.setName("k");
+    cout << k << endl;
+    csis << k << endl;
+    IntArray l(1, 4);
+    for(int i = l.low(); i <= l.high(); i++)
+        l[i] = i * 10;
+    l.setName("l");
+    cout << l << endl;
+    csis << l << endl;
+    wait();
+    system("clear");
+    j = k = l;
+    cout << j << endl;
+    cout << k << endl;
+    cout << l << endl;
+    csis << j << endl;
+    csis << k << endl;
+    csis << l << endl;
+    wait();
+}
  
 void test9() {
     system("clear");
@@ -210,7 +210,7 @@ void test9() {
     cout << n << endl;
     csis << n << endl;
     wait();
-    system("cls");
+    system("clear");
     m = n;
     cout << m << endl;
     cout << n << endl;
@@ -221,138 +221,138 @@ void test9() {
     wait();
 }
  
-//void test10() {
-//    system("cls");
-//    cout << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
-//    cout << "                                                       IntArray p(1, 5);"  << endl;
-//    cout << "                                                       o == p"             << endl << endl;
-//    csis << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
-//    csis << "                                                       IntArray p(1, 5);"  << endl;
-//    csis << "                                                       o == p"             << endl << endl;
-//    IntArray o(3, 7);
-//    for(int i = o.low(); i <= o.high(); i++)
-//        o[i] = i * 10;
-//    o.setName("o");
-//    cout << o << endl;
-//    csis << o << endl;
-//    IntArray p(1, 5);
-//    for(int i = p.low(); i <= p.high(); i++)
-//        p[i] = i * 10;
-//    p.setName("p");
-//    cout << p << endl;
-//    cout << "Returns " << (o == p ? "True." : "False.") << endl << endl;
-//    csis << p << endl;
-//    csis << "Returns " << (o == p ? "True." : "False.") << endl << endl;
-//    wait();
-//}
+void test10() {
+    system("clear");
+    cout << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
+    cout << "                                                       IntArray p(1, 5);"  << endl;
+    cout << "                                                       o == p"             << endl << endl;
+    csis << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
+    csis << "                                                       IntArray p(1, 5);"  << endl;
+    csis << "                                                       o == p"             << endl << endl;
+    IntArray o(3, 7);
+    for(int i = o.low(); i <= o.high(); i++)
+        o[i] = i * 10;
+    o.setName("o");
+    cout << o << endl;
+    csis << o << endl;
+    IntArray p(1, 5);
+    for(int i = p.low(); i <= p.high(); i++)
+        p[i] = i * 10;
+    p.setName("p");
+    cout << p << endl;
+    cout << "Returns " << (o == p ? "True." : "False.") << endl << endl;
+    csis << p << endl;
+    csis << "Returns " << (o == p ? "True." : "False.") << endl << endl;
+    wait();
+}
 // 
-//void test11() {
-//    system("cls");
-//    cout << "11. Overloaded equality operator (different size arrays): IntArray q(1, 3);"  << endl;
-//    cout << "                                                          IntArray r(1, 4);"  << endl;
-//    cout << "                                                          q == r;"    << endl << endl;
-//    csis << "11. Overloaded equality operator (different size arrays): IntArray q(1, 3);"  << endl;
-//    csis << "                                                          IntArray r(1, 4);"  << endl;
-//    csis << "                                                          q == r;"    << endl << endl;
-//    IntArray q(1, 3);
-//    for(int i = q.low(); i <= q.high(); i++)
-//        q[i] = i * 10;
-//    q.setName("q");
-//    cout << q << endl;
-//    csis << q << endl;
-//    IntArray r(1, 4);
-//    for(int i = r.low(); i <= r.high(); i++)
-//        r[i] = i * 10;
-//    r.setName("r");
-//    cout << r << endl;
-//    cout << "Returns " << (q == r ? "True." : "False.") << endl << endl;
-//    csis << r << endl;
-//    csis << "Returns " << (q == r ? "True." : "False.") << endl << endl;
-//    wait();
-//}
-// 
-//void test12() {
-//    system("cls");
-//    cout << "12. Overloaded inequality operator (identical elements): IntArray s(3, 7);" << endl;
-//    cout << "                                                         IntArray t(1, 5);" << endl;
-//    cout << "                                                         s != t;"           << endl << endl;
-//    csis << "12. Overloaded inequality operator (identical elements): IntArray s(3, 7);" << endl;
-//    csis << "                                                         IntArray t(1, 5);" << endl;
-//    csis << "                                                         s != t;"           << endl << endl;
-//    IntArray s(3, 7);
-//    for(int i = s.low(); i <= s.high(); i++)
-//        s[i] = i * 10;
-//    s.setName("s");
-//    cout << s << endl;
-//    csis << s << endl;
-//    IntArray t(1, 5);
-//    for(int i = t.low(); i <= t.high(); i++)
-//        t[i] = i * 10;
-//    t.setName("t");
-//    cout << t << endl;
-//    csis << t << endl;
-//    wait();
-//    system("cls");
-//    s = t;
-//    cout << s << endl;
-//    cout << t << endl;
-//    cout << "Returns " << (s != t ? "True." : "False.") << endl << endl;
-//    csis << s << endl;
-//    csis << t << endl;
-//    csis << "Returns " << (s != t ? "True." : "False.") << endl << endl;
-//    wait();
-//}
-// 
-//void test13() {
-//    system("cls");
-//    cout << "13. Overloaded inequality operator (different elements): IntArray u(3, 7);" << endl;
-//    cout << "                                                         IntArray v(1, 5);" << endl;
-//    cout << "                                                         u != v;"           << endl << endl;
-//    csis << "13. Overloaded inequality operator (different elements): IntArray u(3, 7);" << endl;
-//    csis << "                                                         IntArray v(1, 5);" << endl;
-//    csis << "                                                         u != v;"           << endl << endl;
-//    IntArray u(3, 7);
-//    for(int i = u.low(); i <= u.high(); i++)
-//        u[i] = i * 10;
-//    u.setName("u");
-//    cout << u << endl;
-//    csis << u << endl;
-//    IntArray v(1, 5);
-//    for(int i = v.low(); i <= v.high(); i++)
-//        v[i] = i * 10;
-//    v.setName("v");
-//    cout << v << endl;
-//    cout << "Returns " << (u != v ? "True." : "False.") << endl << endl;
-//    csis << v << endl;
-//    csis << "Returns " << (u != v ? "True." : "False.") << endl << endl;
-//    wait();
-//}
-// 
-//void test14() {
-//    system("cls");
-//    cout << "14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);" << endl;
-//    cout << "                                                            IntArray x(1, 4);" << endl;
-//    cout << "                                                            w != x;"           << endl << endl;
-//    csis << "14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);" << endl;
-//    csis << "                                                            IntArray x(1, 4);" << endl;
-//    csis << "                                                            w != x;"           << endl << endl;
-//    IntArray w(1, 3);
-//    for(int i = w.low(); i <= w.high(); i++)
-//        w[i] = i * 10;
-//    w.setName("w");
-//    cout << w << endl;
-//    csis << w << endl;
-//    IntArray x(1, 4);
-//    for(int i = x.low(); i <= x.high(); i++)
-//        x[i] = i * 10;
-//    x.setName("x");
-//    cout << x << endl;
-//    cout << "Returns " << (w != x ? "True." : "False.") << endl << endl;
-//    csis << x << endl;
-//    csis << "Returns " << (w != x ? "True." : "False.") << endl << endl;
-//    wait();
-//}
-// 
+void test11() {
+    system("clear");
+    cout << "11. Overloaded equality operator (different size arrays): IntArray q(1, 3);"  << endl;
+    cout << "                                                          IntArray r(1, 4);"  << endl;
+    cout << "                                                          q == r;"    << endl << endl;
+    csis << "11. Overloaded equality operator (different size arrays): IntArray q(1, 3);"  << endl;
+    csis << "                                                          IntArray r(1, 4);"  << endl;
+    csis << "                                                          q == r;"    << endl << endl;
+    IntArray q(1, 3);
+    for(int i = q.low(); i <= q.high(); i++)
+        q[i] = i * 10;
+    q.setName("q");
+    cout << q << endl;
+    csis << q << endl;
+    IntArray r(1, 4);
+    for(int i = r.low(); i <= r.high(); i++)
+        r[i] = i * 10;
+    r.setName("r");
+    cout << r << endl;
+    cout << "Returns " << (q == r ? "True." : "False.") << endl << endl;
+    csis << r << endl;
+    csis << "Returns " << (q == r ? "True." : "False.") << endl << endl;
+    wait();
+}
+ 
+void test12() {
+    system("clear");
+    cout << "12. Overloaded inequality operator (identical elements): IntArray s(3, 7);" << endl;
+    cout << "                                                         IntArray t(1, 5);" << endl;
+    cout << "                                                         s != t;"           << endl << endl;
+    csis << "12. Overloaded inequality operator (identical elements): IntArray s(3, 7);" << endl;
+    csis << "                                                         IntArray t(1, 5);" << endl;
+    csis << "                                                         s != t;"           << endl << endl;
+    IntArray s(3, 7);
+    for(int i = s.low(); i <= s.high(); i++)
+        s[i] = i * 10;
+    s.setName("s");
+    cout << s << endl;
+    csis << s << endl;
+    IntArray t(1, 5);
+    for(int i = t.low(); i <= t.high(); i++)
+        t[i] = i * 10;
+    t.setName("t");
+    cout << t << endl;
+    csis << t << endl;
+    wait();
+    system("clear");
+    s = t;
+    cout << s << endl;
+    cout << t << endl;
+    cout << "Returns " << (s != t ? "True." : "False.") << endl << endl;
+    csis << s << endl;
+    csis << t << endl;
+    csis << "Returns " << (s != t ? "True." : "False.") << endl << endl;
+    wait();
+}
+ 
+void test13() {
+    system("cls");
+    cout << "13. Overloaded inequality operator (different elements): IntArray u(3, 7);" << endl;
+    cout << "                                                         IntArray v(1, 5);" << endl;
+    cout << "                                                         u != v;"           << endl << endl;
+    csis << "13. Overloaded inequality operator (different elements): IntArray u(3, 7);" << endl;
+    csis << "                                                         IntArray v(1, 5);" << endl;
+    csis << "                                                         u != v;"           << endl << endl;
+    IntArray u(3, 7);
+    for(int i = u.low(); i <= u.high(); i++)
+        u[i] = i * 10;
+    u.setName("u");
+    cout << u << endl;
+    csis << u << endl;
+    IntArray v(1, 5);
+    for(int i = v.low(); i <= v.high(); i++)
+        v[i] = i * 10;
+    v.setName("v");
+    cout << v << endl;
+    cout << "Returns " << (u != v ? "True." : "False.") << endl << endl;
+    csis << v << endl;
+    csis << "Returns " << (u != v ? "True." : "False.") << endl << endl;
+    wait();
+}
+ 
+void test14() {
+    system("clear");
+    cout << "14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);" << endl;
+    cout << "                                                            IntArray x(1, 4);" << endl;
+    cout << "                                                            w != x;"           << endl << endl;
+    csis << "14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);" << endl;
+    csis << "                                                            IntArray x(1, 4);" << endl;
+    csis << "                                                            w != x;"           << endl << endl;
+    IntArray w(1, 3);
+    for(int i = w.low(); i <= w.high(); i++)
+        w[i] = i * 10;
+    w.setName("w");
+    cout << w << endl;
+    csis << w << endl;
+    IntArray x(1, 4);
+    for(int i = x.low(); i <= x.high(); i++)
+        x[i] = i * 10;
+    x.setName("x");
+    cout << x << endl;
+    cout << "Returns " << (w != x ? "True." : "False.") << endl << endl;
+    csis << x << endl;
+    csis << "Returns " << (w != x ? "True." : "False.") << endl << endl;
+    wait();
+}
+ 
 //void test15() {
 //    system("cls");
 //    cout << "15. Sum of two arrays assigned to third array: IntArray a(1, 5);"   << endl;

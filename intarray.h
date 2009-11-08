@@ -21,7 +21,9 @@ class IntArray {
     friend ostream& operator<<(ostream& os, IntArray& ia);
     void setName(char *name);
   	int length();
-  	IntArray& operator=(const IntArray&);
+  	IntArray& operator=(IntArray&);
+  	bool operator==(IntArray);
+  	bool operator!=(IntArray);
 };
 
 #endif

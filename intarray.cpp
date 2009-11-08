@@ -55,7 +55,7 @@ int IntArray::length() {
 	return (b - a);
 }
 
-IntArray& IntArray::operator=(const IntArray& ia) {
+IntArray& IntArray::operator=(IntArray& ia) {
 	if (ia.length() == ia.length()) {
 		for (int i = 0; i <= length(); i++) {
 			num[i] = ia[ia.low()+i];
@@ -64,6 +64,25 @@ IntArray& IntArray::operator=(const IntArray& ia) {
 	}
 	cout << "different sizes";
 	return *this;
+}
+
+// if intArrays have the same # of elements and those elements are equal
+bool IntArray::operator==(IntArray ia) {
+  if (length() == ia.length()) {
+    for (int i = 0; i < ia.length(); i++) {
+      if (num[a+i-1] != ia[ia.low()+i]) return false;
+    }
+    return true;
+  } else return false;
+}
+
+bool IntArray::operator!=(IntArray ia) {
+  if (length() == ia.length()) {
+    for (int i = 0; i < ia.length(); i++) {
+      if (num[a+i-1] != ia[ia.low()+i]) return true;
+    }
+    return false;
+  } else return true;
 }
 
 
