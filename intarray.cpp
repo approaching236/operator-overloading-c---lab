@@ -7,10 +7,16 @@ using namespace std;
 extern ofstream csis;
 
 IntArray::IntArray (int start, int finish) {
-  a = start;
-  b = finish;
+  if (start > finish) {
+    cout << "simulating a halt, the following data simply prevents an error in the program, though is incorrect" << endl;
+    a = finish;
+    b = start;
+  } else {
+    a = start;
+    b = finish;
+  }
   num = new int[b-a];
-  setName("");
+  name = new char[1];
 }
 
 IntArray::IntArray (int finish) {
@@ -20,30 +26,22 @@ IntArray::IntArray (int finish) {
   setName("");
 }
 
-IntArray::~IntArray()
-{
-    delete[] num;
-    delete[] name;
-}
+//IntArray::~IntArray()
+//{
+//    delete[] num;
+//    delete[] name;
+//}
 
-IntArray::IntArray(IntArray &ia){
-  num = new int[ia.high()-ia.low()];
-  for (int i = a; i <= b; i++) {
-    num[i] = ia[i];
-  }
-  a = ia.a;
-  b = ia.b;
-  name = new char[sizeof(ia.name)/4];
-  for (int k = 0; k < (sizeof(ia.name)/4); k++) {
-    name[k] = ia.name[k];
-  }
-}
-
-//IntArray::IntArray (const IntArray&) {
-//  a = this.low();
-//  b = this.high();
-//  for (int i = a; i <= b; i++) {
-//    num[i] = ia[i];
+//IntArray::IntArray(IntArray &ia){
+//  num = new int[ia.high()-ia.low()];
+//  for (int i = 0; i < (ia.high()-ia.low()); i++) {
+//    num[i] = ia.num[i];
+//  }
+//  a = ia.a;
+//  b = ia.b;
+//  name = new char[sizeof(ia.name)/4];
+//  for (int k = 0; k < (sizeof(ia.name)/4); k++) {
+//    name[k] = ia.name[k];
 //  }
 //}
 
@@ -60,6 +58,10 @@ char* IntArray::getName() {
 }
 
 int& IntArray::operator[](int i) {
+  if (i < a || i > b) {
+    cout << "out of bounds error. Simulating halt." << endl;
+    return num[a];
+  }
   return num[i-a];
 }
 
@@ -80,13 +82,13 @@ int IntArray::length() {
 }
 
 IntArray& IntArray::operator=(IntArray& ia) {
-	if (ia.length() == ia.length()) {
+	if (length() == ia.length()) {
 		for (int i = 0; i <= length(); i++) {
 			num[i] = ia[ia.low()+i];
 		}
 		return *this;
 	}
-	cout << "different sizes";
+	cout << "different sizes. Simulating halt." << endl;
 	return *this;
 }
 

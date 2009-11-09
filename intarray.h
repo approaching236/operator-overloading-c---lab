@@ -14,8 +14,8 @@ class IntArray {
   public:
     IntArray(int start, int finish);
     IntArray(int finish = 10);
-    ~IntArray();
-    IntArray(IntArray& ia);
+//    ~IntArray();
+//    IntArray(IntArray& ia);
     int low();
     int high();
     char* getName();

@@ -24,8 +24,8 @@ int main() {
 //    test12();
 //    test13();
 //    test14();
-//    test15();
-    test16();
+    test15();
+//    test16();
 //    test17();
 //    test18();
 //    test19();
@@ -33,18 +33,18 @@ int main() {
     csis.close();
 }
 
-//void test1() {
-//    system("cls");
-//    cout << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
-//    csis << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
-//    IntArray a(10);
-//    for(int i = a.low(); i <= a.high(); i++)
-//        a[i] = i * 10;
-//    a.setName("a");
-//    cout << a << endl;
-//    csis << a << endl;
-//    wait();
-//}
+void test1() {
+    system("cls");
+    cout << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
+    csis << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
+    IntArray a(10);
+    for(int i = a.low(); i <= a.high(); i++)
+        a[i] = i * 10;
+    a.setName("a");
+    cout << a << endl;
+    csis << a << endl;
+    wait();
+}
 
 void test2() {
     system("cls");
@@ -89,9 +89,7 @@ void test5() {
     system("cls");
     cout << "5. Array declared with no integers: IntArray z;" << endl << endl;
     csis << "5. Array declared with no integers: IntArray z;" << endl << endl;
-    cout << "yo mama";
     IntArray z(10);
-    cout << "isaho";
     for(int i = z.low(); i <= z.high(); i++)
         z[i] = i * 10;
     z.setName("z");
@@ -396,9 +394,7 @@ void test16() {
     d.setName("d");
     cout << d << endl;
     csis << d << endl;
-    cout << "before constructor: " << d << endl;
     IntArray e(30, 33);
-    cout << "after constructor: " << d << endl;
     for(int i = e.low(); i <= e.high(); i++)
         e[i] = i * 10;
     e.setName("e");
@@ -410,85 +406,85 @@ void test16() {
     wait();
 }
  
-//void test17() {
-//    system("cls");
-//    cout << "17. Array declared with illegal array bounds: IntArray f(5, 2);" << endl << endl;
-//    csis << "17. Array declared with illegal array bounds: IntArray f(5, 2);" << endl << endl;
-//    IntArray f(5, 2);
-//    for(int i = f.low(); i <= f.high(); i++)
-//        f[i] = i * 10;
-//    f.setName("f");
-//    cout << f << endl;
-//    csis << f << endl;
-//    wait();
-//}
-// 
-//void test18() {
-//    system("cls");
-//    cout << "18. Array with index out of range: IntArray g(10);"    << endl;
-//    cout << "                                   g[10] = 1;"         << endl << endl;
-//    csis << "18. Array with index out of range: IntArray g(10);"    << endl;
-//    csis << "                                   g[10] = 1;"         << endl << endl;
-//    IntArray g(10);
-//    for(int i = g.low(); i <= g.high(); i++)
-//        g[i] = i * 10;
-//    g.setName("g");
-//    cout << g << endl;
-//    csis << g << endl;
-//    g[10] = 1;
-//    wait();
-//}
-// 
-//void test19() {
-//    system("cls");
-//    cout << "19. Arrays with length mismatch: IntArray m(1, 4);" << endl;
-//    cout << "                                 IntArray n(2, 4);" << endl;
-//    cout << "                                 m = n;"            << endl << endl;
-//    csis << "19. Arrays with length mismatch: IntArray m(1, 4);" << endl;
-//    csis << "                                 IntArray n(2, 4);" << endl;
-//    csis << "                                 m = n;"            << endl << endl;
-//    IntArray m(1, 4);
-//    for(int i = m.low(); i <= m.high(); i++)
-//        m[i] = i * 10;
-//    m.setName("m");
-//    cout << m << endl;
-//    csis << m << endl;
-//    IntArray n(2, 4);
-//    for(int i = n.low(); i <= n.high(); i++)
-//        n[i] = i * 10;
-//    n.setName("n");
-//    cout << n << endl;
-//    csis << n << endl;
-//    wait();
-//    system("cls");
-//    m = n;
-//    cout << m << endl;
-//    cout << n << endl;
-//    csis << m << endl;
-//    csis << n << endl;
-//    wait();
-//}
-// 
-//void test20() {
-//    system("cls");
-//    cout << "20. Array subscript operator: IntArray o(7, 8);" << endl;
-//    cout << "                              o[7] = 25;"        << endl;
-//    cout << "                              o[8] = o[7];"      << endl << endl;
-//    csis << "20. Array subscript operator: IntArray o(7, 8);" << endl;
-//    csis << "                              o[7] = 25;"        << endl;
-//    csis << "                              o[8] = o[7];"      << endl << endl;
-//    IntArray o(7, 8);
-//    for(int i = o.low(); i <= o.high(); i++)
-//        o[i] = i * 10;
-//    o.setName("o");
-//    cout << o << endl;
-//    csis << o << endl;
-//    o[7] = 25;
-//    o[8] = o[7];
-//    cout << o << endl;
-//    csis << o << endl;
-//    wait();
-//}
+void test17() {
+    system("cls");
+    cout << "17. Array declared with illegal array bounds: IntArray f(5, 2);" << endl << endl;
+    csis << "17. Array declared with illegal array bounds: IntArray f(5, 2);" << endl << endl;
+    IntArray f(5, 2);
+    for(int i = f.low(); i <= f.high(); i++)
+        f[i] = i * 10;
+    f.setName("f");
+    cout << f << endl;
+    csis << f << endl;
+    wait();
+}
+ 
+void test18() {
+    system("cls");
+    cout << "18. Array with index out of range: IntArray g(10);"    << endl;
+    cout << "                                   g[10] = 1;"         << endl << endl;
+    csis << "18. Array with index out of range: IntArray g(10);"    << endl;
+    csis << "                                   g[10] = 1;"         << endl << endl;
+    IntArray g(10);
+    for(int i = g.low(); i <= g.high(); i++)
+        g[i] = i * 10;
+    g.setName("g");
+    cout << g << endl;
+    csis << g << endl;
+    g[10] = 1;
+    wait();
+}
+ 
+void test19() {
+    system("cls");
+    cout << "19. Arrays with length mismatch: IntArray m(1, 4);" << endl;
+    cout << "                                 IntArray n(2, 4);" << endl;
+    cout << "                                 m = n;"            << endl << endl;
+    csis << "19. Arrays with length mismatch: IntArray m(1, 4);" << endl;
+    csis << "                                 IntArray n(2, 4);" << endl;
+    csis << "                                 m = n;"            << endl << endl;
+    IntArray m(1, 4);
+    for(int i = m.low(); i <= m.high(); i++)
+        m[i] = i * 10;
+    m.setName("m");
+    cout << m << endl;
+    csis << m << endl;
+    IntArray n(2, 4);
+    for(int i = n.low(); i <= n.high(); i++)
+        n[i] = i * 10;
+    n.setName("n");
+    cout << n << endl;
+    csis << n << endl;
+    wait();
+    system("cls");
+    m = n;
+    cout << m << endl;
+    cout << n << endl;
+    csis << m << endl;
+    csis << n << endl;
+    wait();
+}
+ 
+void test20() {
+    system("cls");
+    cout << "20. Array subscript operator: IntArray o(7, 8);" << endl;
+    cout << "                              o[7] = 25;"        << endl;
+    cout << "                              o[8] = o[7];"      << endl << endl;
+    csis << "20. Array subscript operator: IntArray o(7, 8);" << endl;
+    csis << "                              o[7] = 25;"        << endl;
+    csis << "                              o[8] = o[7];"      << endl << endl;
+    IntArray o(7, 8);
+    for(int i = o.low(); i <= o.high(); i++)
+        o[i] = i * 10;
+    o.setName("o");
+    cout << o << endl;
+    csis << o << endl;
+    o[7] = 25;
+    o[8] = o[7];
+    cout << o << endl;
+    csis << o << endl;
+    wait();
+}
 
 void wait() {
     char buf;
