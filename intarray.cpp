@@ -23,7 +23,7 @@ IntArray::IntArray (int finish) {
   a = 0;
   b = (finish - 1);
   num = new int[finish];
-  setName("");
+  name = new char[1];
 }
 
 //IntArray::~IntArray()
@@ -33,16 +33,19 @@ IntArray::IntArray (int finish) {
 //}
 
 //IntArray::IntArray(IntArray &ia){
-//  num = new int[ia.high()-ia.low()];
-//  for (int i = 0; i < (ia.high()-ia.low()); i++) {
+//  num = new int[ia.high()-ia.low()+1];
+//  for (int i = 0; i <= (ia.high()-ia.low()); i++) {
 //    num[i] = ia.num[i];
 //  }
 //  a = ia.a;
 //  b = ia.b;
-//  name = new char[sizeof(ia.name)/4];
-//  for (int k = 0; k < (sizeof(ia.name)/4); k++) {
-//    name[k] = ia.name[k];
-//  }
+////  name=ia.name;
+////  cout << sizeof(ia.name) << " " << ia.name[1] << endl;
+////  name = new char[sizeof(ia.name)];
+////  for (int k = 0; k < (sizeof(ia.name)/4); k++) {
+////    name[k] = ia.name[k];
+////  }
+//  cout << "finished copy" << endl;
 //}
 
 int IntArray::low() {
@@ -59,6 +62,7 @@ char* IntArray::getName() {
 
 int& IntArray::operator[](int i) {
   if (i < a || i > b) {
+    cout << "i: " << i << endl;
     cout << "out of bounds error. Simulating halt." << endl;
     return num[a];
   }
@@ -70,9 +74,8 @@ void IntArray::setName(char *n) {
 }
 
 ostream& operator<< (ostream& os, IntArray& ia) {
-  os << ia.getName() << ": ";
 	for (int i = ia.low(); i <= ia.high(); i++) {
-		os << ia[i] << " ";
+		os << ia.name << "[" << i << "] = " << ia[i] << endl;
 	}
 	return os;
 }
@@ -112,9 +115,9 @@ bool IntArray::operator!=(IntArray ia) {
 }
 
 IntArray& IntArray::operator+(IntArray ia) {
-	IntArray sum(length());
+	IntArray sum(ia.length());
 	if (length() == ia.length()) {
-		for (int i = 0; i <= length(); i++) {
+		for (int i = 0; i < length(); i++) {
 			sum[i] = num[i] + ia[ia.low()+i];
 		}
 	}
@@ -125,7 +128,6 @@ bool IntArray::operator+=(IntArray ia) {
 //  cout << *this << endl;
 	if (length() == ia.length()) {
 		for (int i = 0; i <= length(); i++) {
-		  cout << i << " " << num[i] << endl;
 			num[i] += ia[ia.low()+i];
 		}
 		return true;

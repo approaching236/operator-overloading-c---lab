@@ -10,26 +10,26 @@ ofstream csis;
 
 int main() {
     csis.open("csis.dat");
-//    test1();
-//    test2();
-//    test3();
-//    test4();
-//    test5();
-//    test6();
-//    test7();
-//    test8();
-//    test9();
-//    test10();
-//    test11();
-//    test12();
-//    test13();
-//    test14();
+    test1();
+    test2();
+    test3();
+    test4();
+    test5();
+    test6();
+    test7();
+    test8();
+    test9();
+    test10();
+    test11();
+    test12();
+    test13();
+    test14();
     test15();
-//    test16();
-//    test17();
-//    test18();
-//    test19();
-//    test20();
+    test16();
+    test17();
+    test18();
+    test19();
+    test20();
     csis.close();
 }
 
@@ -381,29 +381,29 @@ void test15() {
 }
  
 void test16() {
-    system("cls");
-    cout << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
-    cout << "                                               IntArray e(30, 33);" << endl;
-    cout << "                                               d += e;"             << endl << endl;
-    csis << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
-    csis << "                                               IntArray e(30, 33);" << endl;
-    csis << "                                               d += e;"             << endl << endl;
-    IntArray d(10, 13);
-    for(int i = d.low(); i <= d.high(); i++)
-        d[i] = i * 10;
-    d.setName("d");
-    cout << d << endl;
-    csis << d << endl;
-    IntArray e(30, 33);
-    for(int i = e.low(); i <= e.high(); i++)
-        e[i] = i * 10;
-    e.setName("e");
-    cout << e << endl;
-    cout << d << endl;
-    d += e;
-    cout << d << endl;
-    csis << d << endl;
-    wait();
+  system("cls");
+  cout << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
+  cout << " IntArray e(30, 33);" << endl;
+  cout << " d += e;" << endl << endl;
+  csis << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
+  csis << " IntArray e(30, 33);" << endl;
+  csis << " d += e;" << endl << endl;
+  IntArray d(10, 13);
+  for(int i = d.low(); i <= d.high(); i++)
+  d[i] = i * 10;
+  d.setName("d");
+  cout << d << endl;
+  csis << d << endl;
+  IntArray e(30, 33);
+  for(int i = e.low(); i <= e.high(); i++)
+  e[i] = i * 10;
+  e.setName("e");
+  cout << e << endl;
+  csis << e << endl;
+  d += e;
+  cout << d << endl;
+  csis << d << endl;
+  wait();
 }
  
 void test17() {
