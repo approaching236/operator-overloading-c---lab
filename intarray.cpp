@@ -20,6 +20,25 @@ IntArray::IntArray (int finish) {
   setName("");
 }
 
+IntArray::~IntArray()
+{
+    delete[] num;
+    delete[] name;
+}
+
+IntArray::IntArray(IntArray &ia){
+  num = new int[ia.high()-ia.low()];
+  for (int i = a; i <= b; i++) {
+    num[i] = ia[i];
+  }
+  a = ia.a;
+  b = ia.b;
+  name = new char[sizeof(ia.name)/4];
+  for (int k = 0; k < (sizeof(ia.name)/4); k++) {
+    name[k] = ia.name[k];
+  }
+}
+
 //IntArray::IntArray (const IntArray&) {
 //  a = this.low();
 //  b = this.high();
@@ -36,6 +55,10 @@ int IntArray::high() {
   return b;
 }
 
+char* IntArray::getName() {
+  return name;
+}
+
 int& IntArray::operator[](int i) {
   return num[i-a];
 }
@@ -45,6 +68,7 @@ void IntArray::setName(char *n) {
 }
 
 ostream& operator<< (ostream& os, IntArray& ia) {
+  os << ia.getName() << ": ";
 	for (int i = ia.low(); i <= ia.high(); i++) {
 		os << ia[i] << " ";
 	}
@@ -85,4 +109,26 @@ bool IntArray::operator!=(IntArray ia) {
   } else return true;
 }
 
+IntArray& IntArray::operator+(IntArray ia) {
+	IntArray sum(length());
+	if (length() == ia.length()) {
+		for (int i = 0; i <= length(); i++) {
+			sum[i] = num[i] + ia[ia.low()+i];
+		}
+	}
+	return sum;
+}
+
+bool IntArray::operator+=(IntArray ia) {
+//  cout << *this << endl;
+	if (length() == ia.length()) {
+		for (int i = 0; i <= length(); i++) {
+		  cout << i << " " << num[i] << endl;
+			num[i] += ia[ia.low()+i];
+		}
+		return true;
+	}
+	cout << "totally simulating a halt" << endl;
+	return false;
+}
 

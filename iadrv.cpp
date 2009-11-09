@@ -23,9 +23,9 @@ int main() {
 //    test11();
 //    test12();
 //    test13();
-    test14();
+//    test14();
 //    test15();
-//    test16();
+    test16();
 //    test17();
 //    test18();
 //    test19();
@@ -34,7 +34,7 @@ int main() {
 }
 
 //void test1() {
-//    system("clear");
+//    system("cls");
 //    cout << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
 //    csis << "1. Array declared with single integer: IntArray a(10);" << endl << endl;
 //    IntArray a(10);
@@ -47,7 +47,7 @@ int main() {
 //}
 
 void test2() {
-    system("clear");
+    system("cls");
     cout << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
     csis << "2. Array declared with two integers: IntArray b(-3, 6);" << endl << endl;
     IntArray b(-3, 6);
@@ -60,7 +60,7 @@ void test2() {
 }
 
 void test3() {
-    system("clear");
+    system("cls");
     cout << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
     csis << "3. Array declared with two integers: IntArray c(6, 8);" << endl << endl;
     IntArray c(6, 8);
@@ -73,7 +73,7 @@ void test3() {
 }
 
 void test4() {
-    system("clear");
+    system("cls");
     cout << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
     csis << "4. Array declared with two identical integers: IntArray d(5, 5);" << endl << endl;
     IntArray d(5, 5);
@@ -86,7 +86,7 @@ void test4() {
 }
 
 void test5() {
-    system("clear");
+    system("cls");
     cout << "5. Array declared with no integers: IntArray z;" << endl << endl;
     csis << "5. Array declared with no integers: IntArray z;" << endl << endl;
     cout << "yo mama";
@@ -101,7 +101,7 @@ void test5() {
 }
  
 void test6() {
-    system("clear");
+    system("cls");
     cout << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
     cout << "                                                        Intarray e(c);"    << endl << endl;
     csis << "6. Array declared with another object of type IntArray: IntArray c(6, 8);" << endl;
@@ -120,7 +120,7 @@ void test6() {
 }
  
 void test7() {
-    system("clear");
+    system("cls");
     cout << "7. Array assigned to another array with different indices: IntArray f(1, 4);"  << endl;
     cout << "                                                           IntArray g(5, 8);"  << endl;
     cout << "                                                           f = g;"             << endl << endl;
@@ -140,7 +140,7 @@ void test7() {
     cout << g << endl;
     csis << g << endl;
     wait();
-    system("clear");
+    system("cls");
     f = g;
     cout << f << endl;
     cout << g << endl;
@@ -150,7 +150,7 @@ void test7() {
 }
  
 void test8() {
-    system("clear");
+    system("cls");
     cout << "8. Multiple array assignment with different indices: IntArray j(3, 6);"  << endl;
     cout << "                                                     IntArray k(6, 9);"  << endl;
     cout << "                                                     IntArray l(1, 4);"  << endl;
@@ -178,7 +178,7 @@ void test8() {
     cout << l << endl;
     csis << l << endl;
     wait();
-    system("clear");
+    system("cls");
     j = k = l;
     cout << j << endl;
     cout << k << endl;
@@ -190,7 +190,7 @@ void test8() {
 }
  
 void test9() {
-    system("clear");
+    system("cls");
     cout << "9. Overloaded equality operator (identical elements): IntArray m(3, 7);"  << endl;
     cout << "                                                      IntArray n(1, 5);"  << endl;
     cout << "                                                      m == n"             << endl << endl;
@@ -210,7 +210,7 @@ void test9() {
     cout << n << endl;
     csis << n << endl;
     wait();
-    system("clear");
+    system("cls");
     m = n;
     cout << m << endl;
     cout << n << endl;
@@ -222,7 +222,7 @@ void test9() {
 }
  
 void test10() {
-    system("clear");
+    system("cls");
     cout << "10. Overloaded equality operator (different elements): IntArray o(3, 7);"  << endl;
     cout << "                                                       IntArray p(1, 5);"  << endl;
     cout << "                                                       o == p"             << endl << endl;
@@ -247,7 +247,7 @@ void test10() {
 }
 // 
 void test11() {
-    system("clear");
+    system("cls");
     cout << "11. Overloaded equality operator (different size arrays): IntArray q(1, 3);"  << endl;
     cout << "                                                          IntArray r(1, 4);"  << endl;
     cout << "                                                          q == r;"    << endl << endl;
@@ -272,7 +272,7 @@ void test11() {
 }
  
 void test12() {
-    system("clear");
+    system("cls");
     cout << "12. Overloaded inequality operator (identical elements): IntArray s(3, 7);" << endl;
     cout << "                                                         IntArray t(1, 5);" << endl;
     cout << "                                                         s != t;"           << endl << endl;
@@ -292,7 +292,7 @@ void test12() {
     cout << t << endl;
     csis << t << endl;
     wait();
-    system("clear");
+    system("cls");
     s = t;
     cout << s << endl;
     cout << t << endl;
@@ -329,7 +329,7 @@ void test13() {
 }
  
 void test14() {
-    system("clear");
+    system("cls");
     cout << "14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);" << endl;
     cout << "                                                            IntArray x(1, 4);" << endl;
     cout << "                                                            w != x;"           << endl << endl;
@@ -353,61 +353,63 @@ void test14() {
     wait();
 }
  
-//void test15() {
-//    system("cls");
-//    cout << "15. Sum of two arrays assigned to third array: IntArray a(1, 5);"   << endl;
-//    cout << "                                               IntArray b(4, 8);"   << endl;
-//    cout << "                                               IntArray c = a + b;" << endl << endl;
-//    csis << "15. Sum of two arrays assigned to third array: IntArray a(1, 5);"   << endl;
-//    csis << "                                               IntArray b(4, 8);"   << endl;
-//    csis << "                                               IntArray c = a + b;" << endl << endl;
-//    IntArray a(1, 5);
-//    for(int i = a.low(); i <= a.high(); i++)
-//        a[i] = i * 10;
-//    a.setName("a");
-//    cout << a << endl;
-//    csis << a << endl;
-//    IntArray b(4, 8);
-//    for(int i = b.low(); i <= b.high(); i++)
-//        b[i] = i * 10;
-//    b.setName("b");
-//    cout << b << endl;
-//    csis << b << endl;
-//    wait();
-//    system("cls");
-//    IntArray c = a + b;
-//    c.setName("c");
-//    cout << c << endl;
-//    csis << c << endl;
-//    wait();
-//}
-// 
-//void test16() {
-//    system("cls");
-//    cout << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
-//    cout << "                                               IntArray e(30, 33);" << endl;
-//    cout << "                                               d += e;"             << endl << endl;
-//    csis << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
-//    csis << "                                               IntArray e(30, 33);" << endl;
-//    csis << "                                               d += e;"             << endl << endl;
-//    IntArray d(10, 13);
-//    for(int i = d.low(); i <= d.high(); i++)
-//        d[i] = i * 10;
-//    d.setName("d");
-//    cout << d << endl;
-//    csis << d << endl;
-//    IntArray e(30, 33);
-//    for(int i = e.low(); i <= e.high(); i++)
-//        e[i] = i * 10;
-//    e.setName("e");
-//    cout << e << endl;
-//    csis << e << endl;
-//    d += e;
-//    cout << d << endl;
-//    csis << d << endl;
-//    wait();
-//}
-// 
+void test15() {
+    system("cls");
+    cout << "15. Sum of two arrays assigned to third array: IntArray a(1, 5);"   << endl;
+    cout << "                                               IntArray b(4, 8);"   << endl;
+    cout << "                                               IntArray c = a + b;" << endl << endl;
+    csis << "15. Sum of two arrays assigned to third array: IntArray a(1, 5);"   << endl;
+    csis << "                                               IntArray b(4, 8);"   << endl;
+    csis << "                                               IntArray c = a + b;" << endl << endl;
+    IntArray a(1, 5);
+    for(int i = a.low(); i <= a.high(); i++)
+        a[i] = i * 10;
+    a.setName("a");
+    cout << a << endl;
+    csis << a << endl;
+    IntArray b(4, 8);
+    for(int i = b.low(); i <= b.high(); i++)
+        b[i] = i * 10;
+    b.setName("b");
+    cout << b << endl;
+    csis << b << endl;
+    wait();
+    system("cls");
+    IntArray c = a + b;
+    c.setName("c");
+    cout << c << endl;
+    csis << c << endl;
+    wait();
+}
+ 
+void test16() {
+    system("cls");
+    cout << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
+    cout << "                                               IntArray e(30, 33);" << endl;
+    cout << "                                               d += e;"             << endl << endl;
+    csis << "16. Sum of two arrays assigned to first array: IntArray d(10, 13);" << endl;
+    csis << "                                               IntArray e(30, 33);" << endl;
+    csis << "                                               d += e;"             << endl << endl;
+    IntArray d(10, 13);
+    for(int i = d.low(); i <= d.high(); i++)
+        d[i] = i * 10;
+    d.setName("d");
+    cout << d << endl;
+    csis << d << endl;
+    cout << "before constructor: " << d << endl;
+    IntArray e(30, 33);
+    cout << "after constructor: " << d << endl;
+    for(int i = e.low(); i <= e.high(); i++)
+        e[i] = i * 10;
+    e.setName("e");
+    cout << e << endl;
+    cout << d << endl;
+    d += e;
+    cout << d << endl;
+    csis << d << endl;
+    wait();
+}
+ 
 //void test17() {
 //    system("cls");
 //    cout << "17. Array declared with illegal array bounds: IntArray f(5, 2);" << endl << endl;
